@@ -1,11 +1,15 @@
 import reactLogo from '../assets/react.svg'
 
-function Tarjeta() {
+function Tarjeta(icono, titulo, descripcion,horas, destacadas) {
+    console.log({ icono, titulo, descripcion, horas, destacadas })
     return(
-        <article className="tarjeta">
+        <article className={destacadas ? 'tarjeta tarjeta-destacada' : 'tarjeta'}> 
             <img src={reactLogo} alt="Logo de React" />
-            <h3>React</h3>
-            <p>Biblioteca de JavaScript para construir interfaces de componentes</p>
+            <span className='tarjeta-icono'>{icono}</span>
+            <h3>{titulo}</h3>
+            <p>{descripcion}</p>
+            <p>Horas: {horas}</p>
+            {/* {destacadas && <span className='tarjeta-destacada'>Destacada</span>} */}
         </article>
     )
 }

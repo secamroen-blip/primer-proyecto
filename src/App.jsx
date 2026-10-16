@@ -18,8 +18,16 @@ function App() {
     <h2>Bievenido al programa de {programa}</h2>
     <Presentacion />
     <section className="tarjetas">
-    <Tarjeta />
-    <Tarjeta />
+    <Tarjeta 
+    icono="🚀"
+    titulo="React"
+    descripcion="Biblioteca de JavaScript para construir interfaces de usuario"
+    />
+    <Tarjeta 
+    icono="🌐"
+    titulo="JavaScript"
+    descripcion="Lenguaje de programación para el desarrollo web"
+    />
     </section>
     </main>
     <PiePagina />
