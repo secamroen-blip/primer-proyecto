@@ -1,0 +1,15 @@
+1. ¿Por qué la ruta de la foto cambió de ../Images a ./Images?
+cambio pq al importarlo directamente la direccion d "images" era mas cercana
+
+2. ¿Qué ventaja tiene enviar un objeto usuario en lugar de tres props separadas?
+la ventaja q tiene es q el codigo queda mas organizado y hace mas sencillo modificar algo d ser necesario 
+
+3. Si mañana el nombre del usuario llegara desde el backend, ¿en qué archivo tendrías que hacer el cambio y por qué solo en ese?
+
+
+4. ¿Qué es el prop drilling y en qué momento se vuelve un problema?
+el prop drilling es lo que ocurre cuando un elemento principal mandar datos a un elemento d muy baja jerarquia
+obligando a los demas elementos a enviar informacion inutil 
+
+es un problema ya q hace q el codigo sea dificial d mantener por ejemplo si cambias el nombre d algo 
+este debera ser cambiado en muchisimos mas elementos
