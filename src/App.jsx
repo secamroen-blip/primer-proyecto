@@ -4,15 +4,24 @@ import Sidebar from './componentes/Sidebar'
 import Tarjeta from './componentes/Tarjeta'
 import PiePagina from './componentes/PiePagina'
 import Presentacion from './componentes/Presentacion'
+import perfil from './imagenes/images.jpg'
 
 
 function App() {
 
   const programa = "Analisis y Desarrollo de Software"
+  const usuario = {
+  hola: '¡Hola, Sebastian!',
+  nombre: 'Sebastian... si eso xd',
+  correo: 'sebastian@example.com',
+  rol: 'Aprendiz ADSO',
+  foto: perfil,
+}
   return (
+    
   <>
   <div className="layout">
-    <Encabezado />
+    <Encabezado usuario={usuario} />
     <Sidebar/>
     <main className="contenido">
     <h2>Bievenido al programa de {programa}</h2>
@@ -34,6 +43,7 @@ function App() {
   </div>
   </>
   )
+  
 }
 
 export default App
