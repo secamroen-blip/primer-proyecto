@@ -1,14 +1,17 @@
+import {opcionesMenu} from '../data/menu.js';
 function Sidebar(){
     return(
         <aside className ="sidebar">
             <h3 className="sidebar-titulo">Menu</h3>
             <nav>
                 <ul className="sider-menu">
-                    <li><a href="#">🏠Inicio</a></li>
-                    <li><a href="#">🙎Mi perfil</a></li>
-                    <li><a href="#">💻Tecnologias</a></li>
-                    <li><a href="#">📚Recursos</a></li>
-                    <li><a href="#">📞Contacto</a></li>
+                    {opcionesMenu.map((opcion)=>(
+                        <li key={opcion.id}>
+                            <a href={opcion.url}>
+                                {opcion.icono} {opcion.texto}
+                            </a>
+                        </li>
+                    ))}
 
                 </ul>
             </nav>
